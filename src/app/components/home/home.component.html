@@ -1,0 +1,18 @@
+<div class="c-home">
+  <div class="c-home_header">
+    <h1>Vamos procurar um filme?</h1>
+
+    <div class="c-home_inputWrap">
+      <input
+      class="c-home_inputWrap--search"
+      type="text"
+      placeholder="Nome filme..."
+      (keyup)="searchMovie($event.target.value)"
+      >
+      <span class="c-home_inputWrap--icon material-icons">search</span>
+    </div>
+  </div>
+  <div class="c-home_moviesWrap">
+    <app-card-movie *ngFor="let movie of movies" [movie]="movie"></app-card-movie>
+  </div>
+</div>

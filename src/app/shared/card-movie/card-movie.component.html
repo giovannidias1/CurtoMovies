@@ -1,0 +1,10 @@
+<div class="c-cardMovie">
+  <img class="c-cardMovie_image"
+  *ngIf="movie.poster_path"
+  src="https://image.tmdb.org/t/p/w300/{{ movie.poster_path }}"
+  >
+  <div class="c-cardMovie_infoWrap">
+    <h3 class="c-cardMovie_title"> {{ movie.title }} </h3>
+    <p class="c-cardMovie_description">{{ movie.overview }}</p>
+  </div>
+</div>
